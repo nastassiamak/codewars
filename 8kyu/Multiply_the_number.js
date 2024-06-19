@@ -12,23 +12,20 @@
 // SOLUTION
 
 function multiply(number){
-    var n= 0;
-    var result = number;
-    if (number > 0) {
-        for (var i = 0; i < number; i++) {
-            number /= 9;
-            n++;
-        }
-    } else {
-        number/=9;
-        n++;
+    let numberStart = number;
+    let quantity = 1;
+    while (number >= 10 || number <= -10) {
+        number = Math.round(number) / 10;
+        quantity++;
     }
-    return result * Math.pow(5,n);
+
+    return numberStart * Math.pow(5, quantity);
+
 }
 console.log(multiply(3));
 console.log(multiply(10));
 console.log(multiply(200));
 console.log(multiply(0));
 console.log(multiply(-3));
-
-
+console.log(multiply(-52228));
+console.log(multiply(52228));
