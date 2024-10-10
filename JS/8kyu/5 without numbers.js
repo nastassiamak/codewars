@@ -10,7 +10,7 @@
 //SOLUTION
 
 function unusualFive() {
-    return 'fivyyyye'.length;
+    return 'five'.length;
 }
 
 console.log(unusualFive());
