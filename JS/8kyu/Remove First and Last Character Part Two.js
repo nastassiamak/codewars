@@ -18,7 +18,6 @@
 // "1"    =>  NULL
 // "1,2"  =>  NULL
 
-function array(string) {
+function arr(string) {
     return string.split(",").slice(1, -1).join(" ") || null;
 }
-
