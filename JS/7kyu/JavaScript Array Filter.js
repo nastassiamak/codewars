@@ -14,4 +14,6 @@ function getEvenNumbers(numbersArray){
     return array;
 }
 
+
+
 console.log(getEvenNumbers([2,4,5,6]))
